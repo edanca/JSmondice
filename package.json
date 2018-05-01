@@ -1,12 +1,21 @@
 {
-  "name": "JSmondice",
+  "name": "jsmondice",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "main": "app.js",
+  "dependencies": {
+    "install": "^0.11.0",
+    "sweetalert2": "^7.19.2"
+  },
+  "devDependencies": {
+    "browserify": "^16.2.0",
+    "watchify": "^3.11.0"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "browserify app.js -o bundle.js",
+    "watch": "watchify app.js -o bundle.js"
   },
   "keywords": [],
   "author": "Edu Cardenas <skynex @hotmail.es> (https://twitter.com/edanca512)",
-  "license": "ISC"
+  "license": "ISC",
+  "description": ""
 }
